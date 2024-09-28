@@ -1,6 +1,5 @@
 <script>
 	import { NavList } from '$lib/nav';
-	import Link from './Link.svelte';
 </script>
 
 <div class="w-full min-h-[80vh] grid place-items-center">
