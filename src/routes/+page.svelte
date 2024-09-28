@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import { NavList } from '$lib/nav';
+	import Link from './Link.svelte';
+</script>
+
+<div class="w-full min-h-[80vh] grid place-items-center">
+	<main class="text-center flex flex-col gap-4 items-center">
+		<h1 class="text-xl">leoj.de</h1>
+		{#each Object.entries(NavList) as [href, label]}
+			<a {href} class="text-4xl mt-2 hover:bg-black hover:text-white hover:italic block">{label}</a>
+		{/each}
+	</main>
+</div>
