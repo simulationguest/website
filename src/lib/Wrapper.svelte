@@ -5,7 +5,7 @@
 	export let title = '';
 </script>
 
-<div class="w-full max-w-4xl mx-auto px-10">
+<div class="w-full max-w-4xl mx-auto px-10 mb-10">
 	<nav class="w-full flex flex-col sm:flex-row justify-between items-center gap-5 my-10">
 		<a href="/" class="text-2xl">leoj.de</a>
 
