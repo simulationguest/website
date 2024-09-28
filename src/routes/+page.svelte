@@ -2,6 +2,10 @@
 	import { NavList } from '$lib/nav';
 </script>
 
+<svelte:head>
+	<title>leoj.de</title>
+</svelte:head>
+
 <div class="w-full min-h-[80vh] grid place-items-center">
 	<main class="text-center flex flex-col gap-4 items-center">
 		<h1 class="text-xl">leoj.de</h1>
