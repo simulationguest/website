@@ -9,7 +9,7 @@
 	<title>{title}</title>
 </svelte:head>
 
-<div class="w-full max-w-4xl mx-auto px-10 mb-10">
+<div class="w-full max-w-4xl mx-auto px-6 md:px-10 mb-10">
 	<nav class="w-full flex flex-col sm:flex-row justify-between items-center gap-5 mt-10 mb-12">
 		<a href="/" class="text-2xl">leoj.de</a>
 		<div class="flex flex-row gap-2 items-center">
