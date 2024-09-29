@@ -7,25 +7,21 @@
 	<div class="flex flex-col gap-4 mt-8">
 		<Row label="name">Leo J.</Row>
 		<Row label="studying">
-			Computer Science at <a href="https://tum.de/" target="_blank">
+			Computer Science at <a href="https://tum.de/" target="_blank" class="underline">
 				Technical University of Munich
 			</a>
 		</Row>
 
 		<Row label="job">
-			<div>Working student at <a href="https://www.mtu.de/" target="_blank">MTU</a></div>
+			<div>
+				Working student at <a href="https://www.mtu.de/" target="_blank" class="underline">MTU</a>
+			</div>
 		</Row>
 		<Row label="age">19</Row>
 		<Row label="languages">Rust, Go, TypeScript, Python, Nix</Row>
 		<Row label="contact">
-			<a href="mailto:contact@leoj.de">E-Mail</a>,
-			<a href="https://git.leoj.de/" target="_blank">GitHub</a>
+			<a href="mailto:contact@leoj.de" class="underline">E-Mail</a>,
+			<a href="https://git.leoj.de/" target="_blank" class="underline">GitHub</a>
 		</Row>
 	</div>
 </Wrapper>
-
-<style>
-	a {
-		text-decoration: underline;
-	}
-</style>
