@@ -4,8 +4,10 @@
 	export let data: PageServerData;
 </script>
 
-<Wrapper title="Blog" description="">
+<Wrapper title="Blog" description="my personal blog">
 	<main>
+		<p><a href="/blog/rss" class="link">Subscribe with RSS</a></p>
+
 		{#each data.posts as post}
 			<section class="my-12">
 				<h2 class="text-xl">{post.title}</h2>
