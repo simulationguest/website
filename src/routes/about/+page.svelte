@@ -3,7 +3,7 @@
 	import Row from './Row.svelte';
 </script>
 
-<Wrapper title="About">
+<Wrapper title="About" description="about myself">
 	<div class="flex flex-col gap-4 mt-8">
 		<Row label="name">Leo J.</Row>
 		<Row label="studying">

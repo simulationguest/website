@@ -8,7 +8,7 @@
 <Wrapper title={data.post.title} description={data.post.description}>
 	<p class="text-lg">{data.post.description}</p>
 	<p class="my-8">
-		Posted on <span class="text-gray-500">{data.post.date}</span> in my
+		Posted on <span class="semi">{data.post.date}</span> in my
 		<a href="/blog" class="link">Blog</a>.
 	</p>
 

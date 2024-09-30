@@ -11,10 +11,13 @@
 }
 
 @layer components {
+	.semi {
+		@apply text-neutral-600 dark:text-neutral-400;
+	}
 	.link {
 		@apply hover:underline;
 	}
 	.button {
-		@apply bg-neutral-100 px-4 py-2.5 text-base inline-block hover:text-white hover:bg-black hover:italic dark:bg-neutral-800 dark:hover:bg-neutral-600;
+		@apply bg-neutral-100 px-4 py-2.5 text-base inline-block hover:text-white hover:bg-black hover:italic dark:bg-neutral-800 dark:hover:bg-white dark:hover:text-black;
 	}
 }

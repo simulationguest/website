@@ -3,7 +3,7 @@
 	import Element from './Element.svelte';
 </script>
 
-<Wrapper title="Portfolio">
+<Wrapper title="Portfolio" description="My portfolio of digital experiences, websites and tools">
 	<p class="text-xl max-w-xl">
 		Tailor-made digital experiences, websites and tools that are simple, correct and a joy to use.
 	</p>

@@ -4,16 +4,14 @@
 	import Meta from '$lib/Meta.svelte';
 </script>
 
-<svelte:head>
-	<title>leoj.de</title>
-</svelte:head>
-
-<Meta title="" description="">
+<Meta title="leoj.de" description="my personal homepage">
 	<div class="w-full min-h-[80vh] grid place-items-center">
 		<main class="text-center flex flex-col gap-4 items-center">
 			<img src={Logo} alt="leoj.de" class="text-xl dark:invert" />
 			{#each Object.entries(NavList) as [href, label]}
-				<a {href} class="text-4xl mt-2 hover:bg-black hover:text-white hover:italic block"
+				<a
+					{href}
+					class="text-4xl mt-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black hover:italic block"
 					>{label}</a
 				>
 			{/each}
