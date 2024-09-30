@@ -5,11 +5,14 @@
 </script>
 
 <Wrapper title="Blog">
-	<ul class="list-disc pl-10 mt-8">
+	<main>
 		{#each data.posts as post}
-			<li>
-				<a href="/blog/{post.slug}"><span class="text-gray-500 mr-1">{post.date}</span> {post.title}</a>
-			</li>
+			<section class="my-12">
+				<h2 class="text-xl">{post.title}</h2>
+				<p class="text-gray-500 text-sm">{post.date}</p>
+				<p class="my-2">{post.description}</p>
+				<p><a href="/blog/{post.slug}" class="link">Read</a></p>
+			</section>
 		{/each}
-	</ul>
+	</main>
 </Wrapper>

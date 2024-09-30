@@ -15,14 +15,14 @@ export interface Post {
 
 // Get all posts and add metadata
 export const posts = Object.entries(
-	import.meta.glob<GlobEntry>('./**/*.md', { eager: true })
+	import.meta.glob<GlobEntry>('../../posts/**/*.md', { eager: true })
 )
 	.map(([filepath, globEntry]) => {
 		return {
 			...globEntry.metadata,
 
 			// generate the slug from the file path
-			slug: parse(filepath).name,
+			slug: parse(filepath).name
 		};
 	})
 	// sort by date
@@ -31,5 +31,5 @@ export const posts = Object.entries(
 	.map((post, index, allPosts) => ({
 		...post,
 		next: allPosts[index - 1] || 0,
-		previous: allPosts[index + 1] || 0,
+		previous: allPosts[index + 1] || 0
 	}));
