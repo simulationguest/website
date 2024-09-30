@@ -8,6 +8,13 @@
 	<meta name="title" content={title} />
 	<meta name="description" content={description} />
 
+	<link
+		rel="alternate"
+		type="application/rss+xml"
+		title="RSS Feed for leoj.de/blog"
+		href="/blog/rss"
+	/>
+
 	<meta property="og:site_name" content="leoj.de" />
 	<meta property="og:title" content={title} />
 	<meta property="og:type" content="website" />
