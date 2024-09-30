@@ -2,7 +2,7 @@
 	import Wrapper from '$lib/Page.svelte';
 </script>
 
-<Wrapper title="Imprint">
+<Wrapper title="Imprint" description="Imprint of leoj.de">
 	<main>
 		<section>
 			<h2>Information according to German §5 of TMG</h2>
