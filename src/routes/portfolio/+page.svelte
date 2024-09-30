@@ -16,7 +16,7 @@
 		</div>
 		<p>
 			Full website renovation, coherent design and advanced CMS.<br />
-			Aggressive focus on loading times, accessibility and SEO.
+			Aggressive focus on loading times and SEO.
 		</p>
 
 		<p>
