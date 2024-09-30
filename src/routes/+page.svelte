@@ -7,7 +7,7 @@
 <Meta title="leoj.de" description="my personal homepage">
 	<div class="w-full min-h-[80vh] grid place-items-center">
 		<main class="text-center flex flex-col gap-4 items-center">
-			<img src={Logo} alt="leoj.de" class="text-xl dark:invert" />
+			<a href="/"><img src={Logo} alt="leoj.de" class="text-xl dark:invert h-32" /></a>
 			{#each Object.entries(NavList) as [href, label]}
 				<a
 					{href}
