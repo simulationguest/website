@@ -1,5 +1,5 @@
 <script>
-	import Wrapper from '$lib/Wrapper.svelte';
+	import Wrapper from '$lib/Page.svelte';
 	import Element from './Element.svelte';
 </script>
 

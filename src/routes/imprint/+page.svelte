@@ -1,5 +1,5 @@
 <script>
-	import Wrapper from '$lib/Wrapper.svelte';
+	import Wrapper from '$lib/Page.svelte';
 </script>
 
 <Wrapper title="Imprint">

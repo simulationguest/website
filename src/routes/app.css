@@ -15,6 +15,6 @@
 		@apply hover:underline;
 	}
 	.button {
-		@apply bg-gray-100 px-4 py-2.5 text-base inline-block hover:text-white hover:bg-black hover:italic;
+		@apply bg-neutral-100 px-4 py-2.5 text-base inline-block hover:text-white hover:bg-black hover:italic dark:bg-neutral-800 dark:hover:bg-neutral-600;
 	}
 }
