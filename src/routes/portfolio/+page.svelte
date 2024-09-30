@@ -42,7 +42,7 @@
 		<div class="w-64 h-64 shadow" slot="img">
 			<enhanced:img src="./igel.png" alt="TOA Bayern homepage" class="object-cover h-64" />
 		</div>
-		<p>Designed and implemented website</p>
+		<p>Designed and implemented website.</p>
 		<p>
 			<a href="https://igelhilfe.org/" class="button">Visit website</a>
 		</p>
