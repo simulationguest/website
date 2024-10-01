@@ -18,7 +18,7 @@ const { title, description } = Astro.props;
 		</a>
 		<div class="flex flex-row gap-2 items-center">
 		{Object.entries(NavList).map(([href, label]) => (
-			<a {href} class:list={["px-1 py-0.5 link"]}>
+			<a {href} class:list={["px-1 py-0.5 link", {"underline": Astro.url.pathname.startsWith(href)}]}>
 				{label}
 			</a>
 		))}
