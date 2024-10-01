@@ -7,6 +7,10 @@ const posts = await getCollection('blog');
 
 <Page title="Blog" description="my personal blog">
 	<main>
+		<p>
+			Subscribe on
+			<a href="/blog/rss.xml" class="link">RSS</a>.
+		</p>
 		{posts.map(post => (
 			<section class="my-12">
 				<h2 class="text-xl">{post.data.title}</h2>

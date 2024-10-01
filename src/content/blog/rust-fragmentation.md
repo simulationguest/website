@@ -1,6 +1,6 @@
 ---
 title: The Rust async fragmentation - slice n dice
-date: "2024-11-29"
+date: "2024-09-30"
 description: How the Rust ecosystem got split up because of async
 ---
 

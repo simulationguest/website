@@ -16,12 +16,13 @@ const { title, description } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" href="/favicon.png" />
 		<title>{title}</title>
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="title" content={title} />
 		<meta name="description" content={description} />
 		<meta property="og:site_name" content="leoj.de" />
 		<meta property="og:title" content={title} />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://leoj.de" />
+		<meta property="og:url" content="https://www.leoj.de" />
 		<meta property="og:description" content={description} />
 	</head>
 	<body>

@@ -37,3 +37,5 @@ Disallow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://www.leoj.de/sitemap-index.xml
