@@ -1,0 +1,20 @@
+---
+import Meta from "../layouts/Meta.astro"
+import { NavList } from "../navlist"
+---
+
+<Meta title="leoj.de" description="my personal homepage">
+	<div class="w-full min-h-[80vh] grid place-items-center">
+		<main class="text-center flex flex-col gap-4 items-center">
+			<a href="/"><img src="/logo.svg" alt="leoj.de" class="text-xl dark:invert h-32" /></a>
+			{Object.entries(NavList).map(([href, label]) => (
+				<a
+					{href}
+					class="text-4xl mt-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black hover:italic block"
+				>
+					{label}
+				</a>
+			))}
+		</main>
+	</div>
+</Meta>

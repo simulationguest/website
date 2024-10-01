@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import Page from "../../layouts/Page.astro";
+
+const posts = await getCollection('blog');
+---
+
+<Page title="Blog" description="my personal blog">
+	<main>
+		{posts.map(post => (
+			<section class="my-12">
+				<h2 class="text-xl">{post.data.title}</h2>
+				<p class="semi text-sm">{post.data.date}</p>
+				<p class="my-2">{post.data.description}</p>
+				<p><a href={`/blog/${post.slug}`} class="link">Read</a></p>
+			</section>
+		))}
+
+	</main>
+</Page>

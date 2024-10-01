@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import Page from '../../layouts/Page.astro';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Page title={entry.data.title} description={entry.data.description}>
+	<p class="text-lg">{entry.data.description}</p>
+	<p class="my-8">
+		Posted on <span class="semi">{entry.data.date}</span> in my
+		<a href="/blog" class="link">Blog</a>.
+	</p>
+
+	<p class="mb-8"></p>
+	<div
+		class="prose md:prose-lg prose-headings:font-normal prose-code:font-mono prose-code:before:content-none prose-code:after:content-none max-w-none dark:prose-invert"
+	>
+	<Content />
+	</div>
+</Page>

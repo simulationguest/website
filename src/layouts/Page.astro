@@ -1,0 +1,31 @@
+---
+import { NavList } from "../navlist";
+import Meta from "./Meta.astro";
+
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<Meta {title} {description}>
+	<nav class="w-full flex flex-col sm:flex-row justify-between items-center gap-5 mt-10 mb-12">
+		<a href="/">
+			<img src="/logo.svg" alt="leoj.de" class="h-16 dark:invert text-xl" />
+		</a>
+		<div class="flex flex-row gap-2 items-center">
+		{Object.entries(NavList).map(([href, label]) => (
+			<a {href} class:list={["px-1 py-0.5 link"]}>
+				{label}
+			</a>
+		))}
+		</div>
+	</nav>
+	<h1 class="text-4xl mb-4">{title}</h1>
+	<div id="content">
+		<slot />
+	</div>
+</Meta>
