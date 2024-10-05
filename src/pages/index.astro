@@ -7,7 +7,7 @@ import { NavList } from "../navlist"
 <Meta title="leoj.de" description="my personal homepage">
 	<div class="w-full min-h-[80vh] grid place-items-center">
 		<main class="text-center flex flex-col gap-4 items-center">
-			<a href="/"><Logo className="dark:invert h-32" /></a>
+			<a href="/" aria-label="leoj.de"><Logo className="dark:invert h-32" /></a>
 			{Object.entries(NavList).map(([href, label]) => (
 				<a
 					{href}
