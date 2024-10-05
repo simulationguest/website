@@ -13,6 +13,8 @@ WORKDIR /app
 COPY --from=dependencies /app/node_modules ./node_modules
 COPY . .
 
+ENV ASTRO_TELEMETRY_DISABLED=1.
+
 RUN npm run build
 
 FROM nginx:alpine AS runner
