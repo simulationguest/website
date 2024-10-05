@@ -1,4 +1,11 @@
-<svg stroke-miterlimit="10" style="
+---
+interface Props {
+	className?: string;
+}
+
+const { className } = Astro.props;
+---
+<svg stroke-miterlimit="10" class={className} style="
                         fill-rule: nonzero;
                         clip-rule: evenodd;
                         stroke-linecap: round;
