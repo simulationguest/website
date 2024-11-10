@@ -3,41 +3,40 @@ import PortfolioCard from "../components/PortfolioCard.astro";
 import Page from "../layouts/Page.astro";
 import CCI from "../images/cci.png";
 import TOA from "../images/toa.png";
-import Igel from "../images/igel.png";
 ---
 
-<Page title="Portfolio" description="My portfolio of digital experiences, websites and tools">
-	<p class="text-xl max-w-xl">
-		Tailor-made digital experiences, websites and tools that are simple, correct and a joy to use.
-	</p>
+<Page
+  title="Portfolio"
+  description="My portfolio of digital experiences, websites and tools"
+>
+  <p class="text-xl max-w-xl">
+    Tailor-made digital experiences, websites and tools that are simple, correct
+    and a joy to use.
+  </p>
 
-	<a href="mailto:contact@leoj.de" class="button mt-4 mb-16">Request an offer</a>
+  <a href="mailto:contact@leoj.de" class="button mt-4 mb-16">Request an offer</a
+  >
 
-	<PortfolioCard name="CCI-LEGAL" image={CCI} lcp={true}>
-		<p>
-			Full website renovation, coherent design and advanced CMS.<br />
-			Aggressive focus on loading times and SEO.
-		</p>
+  <PortfolioCard name="CCI-LEGAL" image={CCI} lcp={true}>
+    <p>
+      Full website renovation, coherent design and advanced CMS.<br />
+      Aggressive focus on loading times and SEO.
+    </p>
 
-		<p>
-			<a href="https://cci-legal.de/" target="_blank" class="button">Visit website</a>
-		</p>
-	</PortfolioCard>
+    <p>
+      <a href="https://cci-legal.de/" target="_blank" class="button"
+        >Visit website</a
+      >
+    </p>
+  </PortfolioCard>
 
-	<PortfolioCard name="TOA Bayern" image={TOA} lcp={true}>
-		<p>
-			Moved the website to a new hosting provider.<br />
-			Decreased operating costs by ~66% and improved design.
-		</p>
-		<p>
-			<a href="https://www.toa-bayern.de/" class="button">Visit website</a>
-		</p>
-	</PortfolioCard>
-
-	<PortfolioCard name="Igelhilfe Grabenstätt" image={Igel} lcp={false}>
-		<p>Designed and implemented website.</p>
-		<p>
-			<a href="https://igelhilfe.org/" class="button">Visit website</a>
-		</p>
-	</PortfolioCard>
+  <PortfolioCard name="TOA Bayern" image={TOA} lcp={true}>
+    <p>
+      Moved the website to a new hosting provider.<br />
+      Decreased operating costs by ~66% and improved design.
+    </p>
+    <p>
+      <a href="https://www.toa-bayern.de/" class="button">Visit website</a>
+    </p>
+  </PortfolioCard>
 </Page>
