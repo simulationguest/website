@@ -1,5 +1,5 @@
 export const NavList: { [href: string]: string } = {
-  "/portfolio": "Portfolio",
+  "/projects": "Projects",
   "/blog": "Blog",
   "/about": "About",
 };

@@ -1,0 +1,20 @@
+---
+import PortfolioCard from "../components/PortfolioCard.astro";
+import Page from "../layouts/Page.astro";
+
+import WoIst from "../images/wo-ist.png";
+---
+
+<Page title="Projects" description="Random stuff I've built">
+    <PortfolioCard name="Wo-Ist?" image={WoIst} lcp={true}>
+        <p>
+            An small app to quickly find local amenities, such as ATMs, coffees
+            or Kebab stands.
+        </p>
+        <p>
+            <a href="https://wo-ist.leoj.de/" class="button" target="_blank">
+                Visit Project
+            </a>
+        </p>
+    </PortfolioCard>
+</Page>
